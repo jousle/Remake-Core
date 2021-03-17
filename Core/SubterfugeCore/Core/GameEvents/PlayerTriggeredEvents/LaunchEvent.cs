@@ -130,7 +130,7 @@ namespace SubterfugeCore.Core.GameEvents
                             int catchInTicks = (int)Math.Ceiling(distanceBetween / velocityDifference);
 
                             CombatEvent catchCombat = new CombatEvent(launchedSub, sub, state.GetCurrentTick().Advance(catchInTicks));
-                            _combatEvents.Add(arriveCombat);
+                            _combatEvents.Add(catchCombat);
                         }
                     }
                     else
